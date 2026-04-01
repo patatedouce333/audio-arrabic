@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KiloClaw Dashboard</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Segoe UI', system-ui, sans-serif; background: #0f1117; color: #e0e0e0; padding: 20px; }
+  .header { display: flex; align-items: center; gap: 12px; margin-bottom: 24px; }
+  .header h1 { font-size: 24px; color: #ff6b35; }
+  .logo { font-size: 32px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 16px; }
+  .card { background: #1a1d27; border: 1px solid #2a2d3a; border-radius: 12px; padding: 20px; }
+  .card h3 { font-size: 13px; color: #888; text-transform: uppercase; margin-bottom: 8px; }
+  .card .value { font-size: 28px; font-weight: 700; color: #fff; }
+  .card .sub { font-size: 12px; color: #666; margin-top: 4px; }
+  .ok { color: #4caf50; }
+  .warn { color: #ff9800; }
+  .footer { margin-top: 30px; padding-top: 16px; border-top: 1px solid #2a2d3a; font-size: 12px; color: #555; text-align: center; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <span class="logo">🦞</span>
+    <h1>KiloClaw Status</h1>
+  </div>
+  <div class="grid">
+    <div class="card"><h3>Modèle</h3><div class="value">qwen3.6</div><div class="sub">kilocode · 200k context</div></div>
+    <div class="card"><h3>Telegram</h3><div class="value ok">ON</div><div class="sub">@karim333bot</div></div>
+    <div class="card"><h3>MCP Servers</h3><div class="value ok">4</div><div class="sub">Brave, Tavily, Browserbase, Apify</div></div>
+    <div class="card"><h3>Skills</h3><div class="value">13</div><div class="sub">LangChain, LangGraph, ClawHub</div></div>
+    <div class="card"><h3>Agents</h3><div class="value">3</div><div class="sub">main, sage, forge</div></div>
+    <div class="card"><h3>Crons</h3><div class="value">2</div><div class="sub">Daily news + MCP health</div></div>
+    <div class="card"><h3>RAM</h3><div class="value">3 Go</div><div class="sub">Fly.io · 2 vCPU</div></div>
+    <div class="card"><h3>Disque</h3><div class="value">~15 Go</div><div class="sub">Volume Fly.io</div></div>
+  </div>
+  <div class="footer">Généré le {{TIMESTAMP}} · KiloClaw OpenClaw 2026.4.1</div>
+</body>
+</html>
